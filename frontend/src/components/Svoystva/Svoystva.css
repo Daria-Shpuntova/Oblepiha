@@ -1,0 +1,26 @@
+.scroll-container {
+    position: relative;
+    height: 200vh; /* Увеличьте высоту для прокрутки */
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  /*  background-image: url('/path/to/your/background-image.jpg'); /* Укажите путь к Вашему фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Цвет текста */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #D7E891;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section {
+   padding: 100px 10% 150px;
+}
+
+@media (max-width: 1024px) {
+  .section{padding: 70px 10% 100px}
+}
+
+@media (max-width: 768px) {
+  .section{padding: 50px 7% 80px}
+}
+
+@media (max-width: 500px) {
+  .section{padding: 30px 5% 50px}
+}
+
+h2{
+  color: #682207;
+  font-size: 3.5vw;
+  font-family: "Yeseva One", serif;
+}
+
+h3{
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+p, a, li{
+  font-size: 1.2vw;
+}

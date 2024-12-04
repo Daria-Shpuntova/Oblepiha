@@ -1,0 +1,21 @@
+.recipesItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipesItemImg {
+    width: 30%;
+}
+
+.recipesItemImg img{width: 100%}
+
+.recipesItemText {width: 65%}
+
+@media (max-width: 500px) {
+    .recipesItem {flex-direction: column}
+    .recipesItemImg {
+        width: 70%;
+        margin: auto;
+    }
+    .recipesItemText {width: 100%}
+}

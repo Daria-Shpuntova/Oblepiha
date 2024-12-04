@@ -1,0 +1,128 @@
+.headerWindow{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerFirstImg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.divH1{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 10%;
+}
+
+.divH1 h1{
+    font-family: "Yeseva One", serif;
+    font-size: 14vw; /* Размер шрифта */
+    color: #9C2C02; /* Цвет текста */
+    position: relative;
+    z-index: 1; /* Убедитесь, что передний текст выше */
+    margin: 0;
+    text-shadow: 0px 0px 20px #b7c965;
+}
+
+.divH1 div{
+    font-family: "Yeseva One", serif;
+    font-size: 14vw; /* Размер шрифта */
+    color: #f9bc39; /* Цвет текста */
+    position: absolute;
+    top: 0; /* Позиционирование по вертикали */
+    left: 10%; /* Позиционирование по горизонтали */
+    filter: blur(20px); /* Эффект размытия */
+    z-index: 2;
+}
+
+.headerImg {
+    position: relative;
+    width: 80%;
+    margin-inline: auto;
+    height: 40vw;
+}
+
+.headerFirstImg img{
+    height: 26vw;
+}
+
+
+.headerImg1 {
+    position: absolute;
+    z-index: 2;
+    right:8%;
+    height: 36vw;
+}
+
+.headerImg2 {
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    left: 8%;
+    height: 30vw;
+}
+
+.h1text{
+    font-size: 2.3vw;
+    margin-inline: 10% ;
+    padding-bottom: 150px;
+}
+
+@media (max-width: 1024px) {
+  .h1text{padding-bottom: 100px}
+}
+
+@media (max-width: 768px) {
+  .h1text{padding-bottom: 80px}
+}
+
+@media (max-width: 500px) {
+  .h1text{padding-bottom: 50px}
+}
+
+.imgOfHeader img{
+    transform: scale(0); /* Начальный размер */
+    opacity: 0; /* Начальная прозрачность */
+    animation: appear 0.7s forwards; /* Анимация */
+}
+
+.divH1 h1{
+    opacity: 0; /* Начальная прозрачность */
+    animation: header_h 2s forwards; /* Анимация */
+    animation-delay: 0.5s
+}
+
+@keyframes appear {
+     0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes header_h {
+     0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.SvgStrelka{
+    position: relative;
+}
+
+.SvgStrelka svg {
+    display: block;
+    position: absolute;
+    top: 5%;
+    height: 2vw;
+}
+

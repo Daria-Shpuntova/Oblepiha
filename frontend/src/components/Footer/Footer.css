@@ -1,0 +1,32 @@
+footer{
+    padding-inline: 10%;
+}
+
+@media (max-width: 768px) {
+  footer{padding-inline:7%}
+}
+
+@media (max-width: 500px) {
+  footer{padding-inline: 5% }
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+    text-align: left;
+}
+
+footer li a{
+    color: #000000;
+}
+
+footer div{
+    text-align: right;
+}
+
+footer div a{
+    color: #9c2c02;
+}
